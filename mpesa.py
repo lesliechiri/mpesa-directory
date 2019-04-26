@@ -77,8 +77,7 @@ class MpesaAccount:
             self.balance = excess_cash+self.balance
        
             
-        elif self.loan==0:
-            print("Dear customer your loan of {} has been cleared".format(self.loan))
+      
        
            
         
