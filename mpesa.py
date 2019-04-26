@@ -72,6 +72,8 @@ class MpesaAccount:
             print("Dear customer your remaining loan balance is {}".format(self.loan))
         elif a>self.loan:
             excess_cash = a - self.loan
+            self.loan = a - excess_cash - self.loan
+           
             self.balance = excess_cash+self.balance
             
         elif self.loan==0:
