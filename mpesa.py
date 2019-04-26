@@ -75,6 +75,9 @@ class MpesaAccount:
             self.loan = a - excess_cash - self.loan
            
             self.balance = excess_cash+self.balance
+        elif a == self.loan:
+            self.loan = self.loan-a
+            print("Dear customer your loan is now fully paid")    
        
             
       
