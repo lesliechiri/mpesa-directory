@@ -114,7 +114,7 @@ class MpesaAccount:
 
             
             time = b["time"].strftime("%A,%d,%B,%Y")
-            b = a["g"]
+            g = b["g"]
             print("on {}  you recieved a loan of {}".format(time,g))
 
     def statements(self):
